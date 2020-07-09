@@ -1,0 +1,49 @@
+Merge Sort involves 2 steps:
+	1. Merging 2 sorted arrays
+	2. Splitting an array into 2 
+	
+----------------------------------
+Logic For Merging 2 Sorted Array
+----------------------------------
+
+1. Create an empty array result
+2. While there are still values we have not looked at...
+		- If the value in the first array is smaller than the value in the second array, append the value of first array into result and move to
+		next value in the first array.
+		- If the value in the first array is larger than the value in the second array, append the value of second array into result and move to
+		next value in the second array.
+		- Once we exhaust any of the arrays push the remaining values of the other array (if any) into the result.
+		
+a=[1,10,50] 	b=[2,14,99,100]
+
+1. a=[1,10,50] 	b=[2,14,99,100]
+      ^            ^
+	since 1<2: c=[1]
+	move pointer 1 step forward in a
+	
+2. a=[1,10,50] 	b=[2,14,99,100]
+        ^          ^
+	since 10>2: c=[1,2]
+	move pointer 1 step forward in b
+
+3. a=[1,10,50] 	b=[2,14,99,100]
+        ^            ^
+	since 10<14: c=[1,2,10]
+	move pointer 1 step forward in a
+	
+4. a=[1,10,50] 	b=[2,14,99,100]
+           ^         ^
+	since 50>14: c=[1,2,10,14]
+	move pointer 1 step forward in b
+
+5. a=[1,10,50] 	b=[2,14,99,100]
+           ^            ^
+	since 50<99: c=[1,2,10,14,50]
+	move pointer 1 step forward in a
+
+Since array a is over (or pointer = len(a)-1) => push remaining elements of b into c
+
+Ans: c=[1,2,10,14,50,99,100]
+
+** However since in mergesort we will not be creating another array for storing the sorted values instead we will store them in the original array
+itself by incrementally iterating from 0 to len(original_array).
