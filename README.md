@@ -6,3 +6,5 @@ Repository containing Implementation and explanation of some algorithms and data
 - **Selection Sort** - [Code](https://github.com/shwetanshu07/DSA/blob/master/Sorting%20Techniques/Selection_sort.py)
 - **Insertion Sort** - [Code](https://github.com/shwetanshu07/DSA/blob/master/Sorting%20Techniques/Insertion_sort.py)
 - **Merge Sort** - [Code](https://github.com/shwetanshu07/DSA/blob/master/Sorting%20Techniques/Merge%20Sort.py), [Explanation](https://raw.githubusercontent.com/shwetanshu07/DSA/master/Sorting%20Techniques/Merge%20Sort%20Explanation.txt), [Video](https://www.youtube.com/watch?v=cAv-4ltj1go&t)
+## Searching Techniques
+- **Binary Search** - [Code](https://github.com/shwetanshu07/DSA/blob/master/Searching%20Techniques/Binary_search.py)
